@@ -13,12 +13,13 @@ public class Palindrome {
 			System.out.println(word + " is a palindrome!");
 		else
 			System.out.println(word + " is not a palindrome!");
+		input.close();
 	}
 	
-	public static boolean isaPalindrome(String word) {
+	public static boolean isaPalindrome(String word) { //Returns true if the word is a palindrome
 		return (word.equalsIgnoreCase(reverseString(word)));
 	}
-	private static String reverseString(String str) {
+	private static String reverseString(String str) { // Returns the revered version of a string
 		if(str.length() == 1)
 			return str;
 		else
